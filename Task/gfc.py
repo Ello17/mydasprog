@@ -29,7 +29,7 @@ for i in range(jumlah_jenis):
         nama, harga = menu[kode]
         jumlah = harga * banyak
         pesanan.append((nama, harga, banyak, jumlah))
-        total += jumlah
+        total = total + jumlah
     else:
         print("Kode tidak valid, diabaikan.")
 
