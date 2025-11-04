@@ -1,6 +1,6 @@
 # Program GEROBAK FRIED CHICKEN
 
-def format_rupiah(amount):
+def format_rupiah(amount): 
     return "Rp.{:,}".format(amount).replace(",", ".")
 
 menu = {
@@ -39,7 +39,8 @@ print("=" * 50)
 print(f"{'Jenis':<10} {'Harga':>10} {'Banyak':>10} {'Jumlah':>15}")
 print("-" * 50)
 for nama, harga, banyak, jumlah in pesanan:
-    print(f"{nama:<10} {format_rupiah(harga):>11} {banyak:>6} {format_rupiah(jumlah):>19}")
+    print(f"{nama:<10} {format_rupiah(harga):>11} {banyak:>6} \
+    {format_rupiah(jumlah):>19}")
 print("-" * 50)
 pajak = int(total * 0.10)
 print(f"{'Total':<32} : {format_rupiah(total)}")
